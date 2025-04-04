@@ -4,21 +4,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Kupal</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
         .main-container {
-            width: 100%;
+            width: 90%;
             overflow: hidden;
         }
         
         span {
             display: inline-block;
+            font-size: 600px;
+            color: white;
+            font-weight: bold;
             white-space: nowrap; 
-            padding-right: 100%; 
-            animation: moveText 10s linear infinite; 
+            animation: moveText 15s linear infinite; 
         }
 
         @keyframes moveText {
             0% {
-                transform: translateX(100%); 
+                transform: translateX(40%); 
             }
             100% {
                 transform: translateX(-100%); 
@@ -28,7 +39,7 @@
 </head>
 <body>
     <div class="main-container">
-        <span>Kupal</span>
+        <span>Kupal ka ba?</span>
     </div>
 </body>
 </html>
